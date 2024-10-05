@@ -4,7 +4,7 @@ const nbStyle = `border: 4px solid tomato;
                 padding: 5px;
                 width: 100%;
                 text-align: center;
-                font-size: 2rem; 
+                font-size: 4rem; 
                 box-shadow: 5px 5px 5px grey; 
                 background-color: aliceblue; 
                 margin:10px 20px 10px 20px; 

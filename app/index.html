@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #e3e2fd;
+            /* Less bright background */
+            scroll-behavior: smooth;
+            /* Enable smooth scrolling */
+        }
+
+        .navbar {
+            background-color: #007bff;
+            /* Bootstrap primary color */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important;
+            /* White text for navbar */
+        }
+
+        .jumbotron {
+            background-color: #e9ecef;
+            /* Light grey background for jumbotron */
+            color: #343a40;
+            /* Dark grey text for jumbotron */
+        }
+
+        .nav-item.active .nav-link {
+            color: #ffc107 !important;
+            /* Yellow text for active nav item */
+        }
+
+        .sidebar {
+            float: left;
+            position: sticky;
+            top: 5%;
+            left: 20px;
+            width: 200px;
+            background-color: #343a40;
+            padding-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            /* Smaller font size */
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            margin-left: 240px;
+            /* Adjusted margin to match sidebar width */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar rounded-4 border border-primary w-10">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#webdev">Web Development</a>
+    </div>
+
+    <div class="content">
+        <div id="home" class="container ">
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-2">
+                    <h1 class="display-4">Welcome to My Portfolio</h1>
+                    <p class="lead">This is a simple portfolio website to showcase my web development projects.</p>
+                    <hr class="my-4">
+                </div>
+                <div id="about" class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="p-3 mb-2 bg-light text-dark shadow-lg rounded">
+                                <h2>About Me</h2>
+                                <p>This section contains information about me.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="projects" class="container mt-5">
+                    <div class="row">
+                        <div class="col">
+                            <div class="p-3 mb-2 bg-light text-dark shadow-lg rounded">
+                                <h2>Featured Project</h2>
+                                <p>This section highlights one of my key projects. It includes a brief description and a
+                                    link to the project.</p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="webdev" class="container mt-4">
+                    <div class="row">
+                        <div class="col">
+                            <div class="p-3 mb-2 bg-light text-dark shadow-lg rounded text-center">
+                                <h2>Web Development Front End Frameworks</h2>
+                                <a href="#" class="btn btn-primary mb-2">View Directory</a>
+                                <div class="mt-3 d-flex justify-content-around">
+                                    <a href="../Web_development_front_end_frameworks/lesson1/index.html"
+                                        class="w-100 btn btn-secondary mx-5">Lesson 1</a>
+                                    <a href="../Web_development_front_end_frameworks/lesson2/index.html"
+                                        class="w-100 btn btn-secondary mx-5">Lesson 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact" class="container mt-5">
+                    <div class="row">
+                        <div class="col">
+                            <div class="p-3 mb-2 bg-light text-dark shadow-lg rounded">
+                                <h2>Contact</h2>
+                                <p>This section contains contact information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('.sidebar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
