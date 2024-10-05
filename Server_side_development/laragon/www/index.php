@@ -25,7 +25,7 @@
                 padding: 0;
                 width: 100%;
                 display: table;
-                font-weight: 100;
+                font-weight: 1s00;
                 font-family: 'Karla';
             }
 
@@ -41,7 +41,7 @@
             }
 
             .title {
-                font-size: 96px;
+                font-size: 4rem;
             }
 
             .opt {
@@ -50,7 +50,7 @@
 
             .opt a {
               text-decoration: none;
-              font-size: 150%;
+              font-size: 2rem;
             }
             
             a:hover {
